@@ -1,0 +1,23 @@
+@layouts.app('title', 'login')
+@end
+
+<body>
+    <main>
+        <section class="Login-container">
+            <h1>Se connecter</h1>
+            <div class="connexion">
+                <form action="/registrer" method="POST">
+                    <input type="email" name="email" placeholder="Adresse e-mail" class="saisie" required>
+                    <input type="password" name="password" placeholder="Mot de passe" class="saisie" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <button onclick="location.href='/auth/google">Continuer avec Google</button>
+            <button onclick="location.href='/auth/apple'">Continuer avec Apple</button>
+            <hr>
+            <button onclick="location.href='/register'" class="btn-create-account">Créer un compte</button>
+        </section>
+       
+    </main>
+</body>
+</html>

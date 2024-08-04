@@ -1,0 +1,23 @@
+@layouts.app('title', 'login')
+<body>
+    <main>
+    <h1>Register</h1>
+        <section class="Login-container">
+            <form action="/registrer" methode="POST">
+                <label>
+                    <span>Full Name</span>
+                        <input type="text" name="txt" placeholder="Nom" required="">
+                    </span>
+                </label>
+                        <input type="text" name="txt" placeholder="Post-nom" required="">
+                        <input type="text" name="txt" placeholder="Prenom" required="">
+                        <input type="email" name="email" placeholder="Adresse e-mail" required>
+                        <input type="password" name="password" placeholder="Mot de passe" required>
+            </form>
+            <button type="submit">Créer un compte</button>
+        </section>
+    </main>
+</body>
+</html>
+@end
+
